@@ -1,12 +1,8 @@
 #include <iostream>
-
 #include <sys/ioctl.h>
 #include <termios.h>
-
 #include <chrono>
 #include <thread>
-
-
 
 using namespace std;
 
