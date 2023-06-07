@@ -25,7 +25,7 @@ bool kbhit()
 
 bool gameOver;
 
-const int width = 20;
+const int width = 40;
 const int height = 20;
 
 int x, y, fruitX, fruitY, score;
@@ -107,11 +107,12 @@ void Draw()
         cout << endl;
     }
 
-    for (int i = 0; i < height + 2; i++)
+    for (int i = 0; i < width +2 ; i++)
     {
         cout << "#";
     }
     cout << endl;
+    cout << "Score: " << score;
 }
 void Input()
 {
@@ -218,6 +219,7 @@ int main()
 {
 
     Setup();
+    system("clear");
     while (!gameOver)
     {
         Draw();
